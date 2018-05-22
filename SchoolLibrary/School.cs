@@ -6,14 +6,15 @@ namespace SchoolLibrary
 {
     class School
     {
-        string Name { get; set; }
-        string Address { get; set; }
-        string City { get; set; }
-        string State { get; set; }
-        string Zip { get; set; }
-        string PhoneNumber { get; set; }
-        string _twitterAddress;
-        string TwitterAddress
+        public string Name { get; set; }
+        public string Address { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string Zip { get; set; }
+        public string PhoneNumber { get; set; }
+
+        private string _twitterAddress;
+        public string TwitterAddress
         {
             // make sure the twitter address starts with a @ symbol
             get { return _twitterAddress; }
