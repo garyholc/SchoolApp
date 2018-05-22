@@ -33,9 +33,12 @@ namespace SchoolFormsApp
                 testSchool.TwitterAddress = txtTwitter.Text;
             } catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message,"Error");
+                
             }
-     
+
+            MessageBox.Show(testSchool.ToString(), "School Details");
+
 
         }
     }
